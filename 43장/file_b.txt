@@ -1,0 +1,1 @@
+The TracebackException class is a high-level interface for building a StackSummary while processing a traceback.

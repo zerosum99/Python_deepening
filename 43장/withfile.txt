@@ -1,0 +1,5 @@
+You need to reset the buffer position to the beginning. You can do this by doing buff.seek(0).
+Every time you read or write to the buffer, the position is advanced by one. Say you start with an empty buffer.
+The buffer value is "", the buffer pos is 0. You do buff.write("hello"). Obviously the buffer value is now hello.
+The buffer position, however, is now 5. 
+When you call read(), there is nothing past position 5 to read! So it returns an empty string.
